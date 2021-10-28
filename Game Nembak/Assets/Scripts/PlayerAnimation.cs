@@ -4,32 +4,29 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    public float speed = 4;
-    public float rotSpeed = 80;
-    public float rot = 0f;
-    public float gravity = 8;
-    Animator anim;
-    Vector3 moveDir = Vector3.zero;
-    CharacterController controller;
+public float speed = 4;
+public float rotSpeed = 80;
+public float rot = 0f;
+public float gravity = 8;
+Animator anim;
+Vector3 moveDir = Vector3.zero;
+CharacterController controller;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        controller = GetComponent<CharacterController>();
-        anim = GetComponent<Animator>();
-        
-    }
+// Start is called before the first frame update
+void Start() {
+controller = GetComponent<CharacterController>();
+anim = GetComponent<Animator>();
+}
 
-    // Update is called once per frame
-    void Update()
-    {
-        Movement();
-    GetInput();
-    SwapAk47();
-    SwapShotgun();
-        
-    }
-    void Movement() {
+// Update is called once per frame
+void Update() {
+Movement();
+GetInput();
+SwapAk47();
+SwapShotgun();
+}
+
+void Movement() {
 if (controller.isGrounded) {
 if (Input.GetKey(KeyCode.W)) {
 if(anim.GetBool("shot") == true) {
