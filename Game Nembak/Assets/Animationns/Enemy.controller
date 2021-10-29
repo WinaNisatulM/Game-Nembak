@@ -16,8 +16,8 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
-  m_ExitTime: 0.8965517
-  m_HasExitTime: 0
+  m_ExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -165,19 +165,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isDie
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isAttack
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -341,13 +341,13 @@ AnimatorStateMachine:
     m_Position: {x: -130, y: 220, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8862121137961247500}
-    m_Position: {x: -80, y: 330, z: 0}
+    m_Position: {x: 230, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2221511811167114886}
-    m_Position: {x: 260, y: 190, z: 0}
+    m_Position: {x: 230, y: 340, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3429218098050870557}
-    m_Position: {x: 250, y: 340, z: 0}
+    m_Position: {x: -140, y: 340, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8278018149730404807}
     m_Position: {x: 70, y: 430, z: 0}
@@ -369,7 +369,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Destroy
-  m_Speed: 1
+  m_Speed: 0
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
